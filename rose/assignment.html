@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assignment</title>
+
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+.hero-section{
+  width: 580px;
+  height: 600px;
+  background-color: black;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.bank-container {
+    width: 800px;
+    max-width: 95%;
+    padding: 40px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #171a2e, #555e8c);
+    color: white;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    padding-top: 30px;
+    
+        
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    
+    
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: white;
+    margin-right: 300px;
+    margin-left: 20px;
+
+}
+
+.form-group input {
+    width: 100%;
+    height: 58px;
+    padding: 15px;
+    border: 1px solid #606b8c;
+    border-radius: 18px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    margin-left: 20px;
+}
+
+.form-group input::placeholder {
+    color: #c3cce0;
+}
+
+.form-group input:focus {
+    border-color: #43e6c4;
+}
+
+
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+    width: 480px;
+    height: 400px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+   
+}
+.btn-account{
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+         
+}
+
+
+.btn-cancel{
+    background: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+       
+}
+
+@media (max-width: 500px) {
+    .bank-container {
+        padding: 25px 18px;
+    }
+}
+
+    h1 {
+        font-size: 27px;
+        
+    }
+
+    
+    .entity{
+        background-color: green;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        color: white;
+        margin-left: 20px;
+        
+        
+
+    }
+    .text{
+        padding-right: 280px;
+        font-size: 17px;
+        color: white;
+    }
+  
+
+
+    <!--table-->
+        table{
+            text-align: left;
+            border-collapse: collapse;
+             width: 100%;
+             margin-top: 150px;
+            
+             
+            
+        }
+        td, th{
+            padding: 10px;
+            border-bottom: 5px solid #171f8f4f;
+            
+        }
+        tr:hover{
+            background:rgb(212, 43, 77);
+        } 
+  
+
+
+  
+  </style>
+</head>
+<body>
+  <section class=" bank-container1">
+    <div class="hero-section">
+      <h1>Add bank account</h1>
+
+
+      <div class="form-group" >
+        <label for="bank">Bank name</label>    
+          <input type="text" id="bank" placeholder="e.gGTBank">
+           <label for="account">Account name</label>
+          <input type="text" id="name" placeholder="Doe Consulting">
+          <label for="number">Account number</label>
+          <input type="number" id="number"  placeholder="10-digit NUBAN">
+      </div>
+
+        <span class="text"><strong class="entity">&#10003;</strong> set as default accout on invoice</span>
+
+      <div class="button-container">
+        <button type="button" class="btn-cancel"> Cancel</button>
+        <button type="button"     class="btn-account">Add account</button>
+      </div>
+      
+
+
+      
+    </div>
+
+
+
+
+
+
+    <!--table-->
+    <table>
+      <tr>
+        <th>0/N</th>
+        <th>Name</th>
+        <th>Department</th>
+      </tr>
+
+      <tr>
+        <td>01</td>
+        <td>Rose</td>
+        <td>computer science</td>
+      </tr>
+
+      <tr>
+        <td>02</td>
+        <td>Peace</td>
+        <td>Physics</td>
+      </tr>
+
+      <tr>
+        <td>03</td>
+        <td>Josephine</td>
+        <td>Mass communication</td>
+      </tr>
+      <tr>
+        <td>04</td>
+        <td>Mark</td>
+        <td>Achitecture</td>
+      </tr>
+    </table>
+
+  </section>
+</body>
+</html>
