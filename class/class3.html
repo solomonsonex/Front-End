@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        .h1{
+            background:orange;
+            display: inline;
+            width: 1000px;
+        }
+        span, label{
+            display: block;
+            width: 200px;
+            background: olive;
+            margin: 20px; 
+        }
+        label{
+        background: yellow;    
+        display: inline-block;
+        width: 100px;
+        }
+        .list1{
+            display: flex;
+            background: #00009933;
+            height: 60px;
+            justify-content: start;
+            justify-content: end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+
+            align-items: baseline;
+            align-items: center;
+            align-items:end;
+        }
+        .profile{
+            width: 60px;
+            height:60px;
+            background: #00009933;
+            font-weight: 700;
+            font-size: 19px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .container{}
+        .card{
+            width: 90%;
+            max-width: 300px;
+            box-shadow: 10px 10px 20px 0px #00009933;
+            margin: 50px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .card:hover{
+        box-shadow: 0px 0px 10px 0px #00009933;
+
+        }
+        img{width: 100%;}
+        .card p{
+            padding: 12px;
+        }
+        .card div{
+            padding: 12px;
+            display: flex;
+            gap: 10px;
+        }
+        .card button{
+            padding: 10px;
+            border:0;
+            border-radius: 5px;
+            background: #00009933;
+            color:#000099;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS display  -->
+
+    <h1 class="h1"> Heading </h1>
+    <h1 class="h1"> Heading </h1>
+    <h1 class="h1"> Heading </h1>
+
+    <!-- inline  -->
+     <span> Inline </span>
+     <label for=""> Inline </label>
+     <input type="text">
+     <img src="" alt="">
+     <button> Button </button>
+
+     <!--  flex  -->
+       <ul class="list1" type="none">
+            <li> Item  1</li>
+            <li> Item  2</li>
+            <li> Item  3</li>
+       </ul>
+
+
+       <!-- example  -->
+        <div class="profile"> SS</div>
+       
+        <!-- card grid -->
+        <section class="container">
+                <div class="card">
+                    <img src="https://picsum.photos/300/130" alt="">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, dolore!</p>
+                    <div>
+                        <button> <i class="ri-thumb-up-fill"></i></button>
+                        <button> <i class="ri-thumb-down-fill"></i></button>
+                    </div>
+                </div>
+        </section>
+</body>
+</html>
