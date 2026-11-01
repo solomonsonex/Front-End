@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+
+        /* overflow  */
+        .overflow{
+            width: 200px;
+            height: 200px;
+            background: yellowgreen;
+            overflow: visible;
+            overflow: hidden;
+            overflow: auto;
+            overflow: scroll;
+        }
+        ::-webkit-scrollbar{
+            background: rgb(237, 225, 225);
+            width: 6px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: black;
+            border-radius: 10px;
+            border: 1px solid rgb(237, 225, 225);
+        }
+
+        /*   */
+        .title{
+            background: linear-gradient(blue, black);
+            font-size: 30px;
+            padding: 20px;
+            font-weight: bolder;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+        }
+        .btn-container{
+            background: linear-gradient(to top left, black, yellow, black);
+            padding: 2px;
+            text-align: center;
+            border-radius: 5px;
+            width: fit-content;
+            
+        }
+        .btn-container button{
+            background: #fff;
+            padding: 10px 30px;
+            border: 0;
+            border-radius: 5px;
+        }
+        .spinner{
+            width: 30px;
+            height: 30px;
+            border: 6px solid rgba(0, 0, 255, 0.22);
+            border-top-color:blue ;
+            margin: 30px;
+            border-radius: 50%;
+        }
+        .spinner2{
+            border:6px solid transparent ;
+            border-top:6px solid blue;
+            border-bottom:6px solid blue;
+            transition: 5s;
+            &:hover{
+                transform:rotate(360deg) ;
+            }
+        }
+        .flex{
+            display: flex;
+            gap: 10px;
+            overflow: auto;
+            &::-webkit-scrollbar{display: none;}
+        }
+
+        .flex .card{
+            padding: 30px;
+            background: orange;
+            border-radius: 5px;
+            min-width: 120px;
+            height: 120px;
+            margin: 40px 0;
+            &:nth-child(odd){
+                background: orangered;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- CSS display  -->
+
+
+        <!--  overflow  -->
+          <div class="overflow">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, asperiores illum nostrum iure impedit dolorem labore id tempora laudantium aspernatur saepe, veniam necessitatibus. Aliquid repellat vel consequatur quod, officiis magni?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, asperiores illum nostrum iure impedit dolorem labore id tempora laudantium aspernatur saepe, veniam necessitatibus. Aliquid repellat vel consequatur quod, officiis magni?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, asperiores illum nostrum iure impedit dolorem labore id tempora laudantium aspernatur saepe, veniam necessitatibus. Aliquid repellat vel consequatur quod, officiis magni?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, asperiores illum nostrum iure impedit dolorem labore id tempora laudantium aspernatur saepe, veniam necessitatibus. Aliquid repellat vel consequatur quod, officiis magni?
+          </div>
+
+          <!-- gradient text -->
+           <div class="title">  Lorem, ipsum dolor.</div>
+
+           <!-- button gradient border -->
+            <div class="btn-container"> <button> primary button  </button> </div>
+
+
+            <!-- spinner -->
+             <div class="spinner"></div>
+             <div class="spinner spinner2"></div>
+
+             
+             <!-- Assignement to create a  loader  -->
+
+             <!-- custome scroll bar  -->
+              <!-- .overflow -->
+
+
+              <!-- swipe scroll -->
+               <div class="flex">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+               </div>
+
+
+
+</body>
+</html>
