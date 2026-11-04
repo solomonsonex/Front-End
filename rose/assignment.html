@@ -1,252 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>assignment</title>
-
+  <title>Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f2f2f2;
-    font-family: Arial, sans-serif;
-    
-}
-
-
-.hero-section{
-  width: 580px;
-  height: 600px;
-  background-color: black;
-    border-radius: 30px;
-    margin-left: 40px;
-    margin-top: 50px;
-    margin-bottom: 150px;
-}
-.bank-container {
-    width: 800px;
-    max-width: 95%;
-    padding: 40px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #171a2e, #555e8c);
-    color: white;
-    
-}
-
-h1 {
-    text-align: center;
-    font-size: 36px;
-    color: white;
-    padding-top: 30px;
-    
-        
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-    
-    
-}
-
-.form-group label {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    color: white;
-    margin-right: 300px;
-    margin-left: 20px;
-
-}
-
-.form-group input {
-    width: 100%;
-    height: 58px;
-    padding: 15px;
-    border: 1px solid #606b8c;
-    border-radius: 18px;
-    background: transparent;
-    color: white;
-    font-size: 17px;
-    outline: none;
-    margin-left: 20px;
-}
-
-.form-group input::placeholder {
-    color: #c3cce0;
-}
-
-.form-group input:focus {
-    border-color: #43e6c4;
-}
-
-
-
-.form-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 35px;
-    width: 480px;
-    height: 400px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-   
-}
-.btn-account{
-    border-radius: 10px;
-    font-size: 17px;
-    cursor: pointer;
-    width: 150px;
-    height: 40px;
-    margin-left: 20px;
-    margin-top: 10px;
-         
-}
-
-
-.btn-cancel{
-    background: white;
-    border: none;
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
-    color: black;
-    margin-left: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-       
-}
-
-@media (max-width: 500px) {
-    .bank-container {
-        padding: 25px 18px;
+    .loader {
+      display: flex;
+      gap: 10px;
     }
-}
+
+    .loader span {
+      width: 15px;
+      height: 15px;
+      background-color: blue;
+      border-radius: 50%;
+      animation: bounce 0.6s infinite alternate;
+    }
+
+    .loader span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .loader span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(-15px);
+      }
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #10102F, #25205A, #302B63);
+      max-width: 1000px;
+      height: 500px;
+      margin-top: 20px;
+      border: 1px solid rgba (255, 255, 255, 0.1);
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      row-gap: 10px;
+      column-gap: 10px;
+      margin-left: 120px;
+      margin-right: 50px;
+
+
+    }
+
+    .btn-button {
+      width: 280px;
+      height: 180px;
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.05);
+      margin-top: 30px;
+      margin-left: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      color: rgba(255, 255, 255, 0.445);
+      text-align: left;
+      padding-left: 30px;
+      font-size: 13px;
+
+    }
 
     h1 {
-        font-size: 27px;
-        
+      font-size: 15px;
+      color: white;
+      margin-top: 5px;
+
+
     }
 
-    
-    .entity{
-        background-color: green;
-        width: 100px;
-        height: 50px;
-        border-radius: 20px;
-        color: white;
-        margin-left: 20px;
-        
-        
+    a {
+      text-decoration: none;
+      margin-top: 10px;
 
     }
-    .text{
-        padding-right: 280px;
-        font-size: 17px;
-        color: white;
+
+    .btn-button img {
+      width: 20px;
+      background: blue;
+      border-radius: 5px;
+      padding: 3px;
+      margin-top: 10px;
+
+
     }
-  
+
+    .project {
+      width: 500px;
+      height: 100px;
+      background: navy;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .input {
+      width: 180px;
+      height: 45px;
+      margin-left: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      color: white;
+      background: black;
+      padding-left: 10px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button {
+      width: 160px;
+      height: 45px;
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 20px;
+      color: white;
+      background: blue;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 330px;
+      box-shadow: 10px 10px 20px 0px #00009933;
+      margin: 50px auto;
+      border-radius: 12px;
+      transition: 0.3s;
+      padding: 20px;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    .card .icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(51, 51, 155, 0.408);
+      border-radius: 8px;
+      color: #433c3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card,
+    h1 {
+      color: black;
+      font-size: 20px;
+
+    }
+
+    .card,
+    p {
+      font-size: 18px;
+      color: black;
+    }
+
+    .card,
+    strong {
+      color: rgba(37, 37, 116, 0.568);
+      padding-bottom: 20px;
+
+    }
+
+    .Enroll {
+      width: 100px;
+      height: 40px;
+      margin-left: 150px;
+      font-size: 15px;
+    }
+
+    .auto {
+      font-size: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 150px;
+
+    }
+
+    .auto,
+    h1 {
+      font-size: 17px;
+      margin-left: 10px;
+      margin-left: 50px;
+    }
+
+    .auto,
+    p {
+      font-size: 15px;
+    }
+
+    .auto img {
+      width: 30px;
+      background: rgba(77, 77, 156, 0.877);
+      border-radius: 5px;
+      margin-left: 100px;
+    }
+
+    .form-container {
+      width: 90%;
+      max-width: 430px;
+      background: rgb(16, 15, 15);
+      box-shadow: 10px 10px 20px 0px black;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
 
 
-    <!--table-->
-        table{
-            text-align: left;
-            border-collapse: collapse;
-             width: 100%;
-             margin-top: 150px;
-            
-             
-            
-        }
-        td, th{
-            padding: 10px;
-            border-bottom: 5px solid #171f8f4f;
-            
-        }
-        tr:hover{
-            background:rgb(212, 43, 77);
-        } 
-  
 
 
-  
+
+    .form-container,
+    h1 {
+      padding-top: 5px;
+      font-size: 20px;
+      padding-left: 20px;
+
+    }
+
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container
+    input, .form-container button {
+      padding: 20px 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid gray;
+      background: transparent;
+      margin:10px auto;
+      display: block;
+      margin-bottom: 15px;
+
+
+    }
+
+   .form-container .submit {
+      background: blue;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: blue;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tech {
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+
+    }
   </style>
 </head>
+
 <body>
-  <section class=" bank-container1">
-    <div class="hero-section">
-      <h1>Add bank account</h1>
+  <!-- loader -->
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
+  <!-- Assignment2 -->
+  <section class="hero-section">
 
-      <div class="form-group" >
-        <label for="bank">Bank name</label>    
-          <input type="text" id="bank" placeholder="e.gGTBank">
-           <label for="account">Account name</label>
-          <input type="text" id="name" placeholder="Doe Consulting">
-          <label for="number">Account number</label>
-          <input type="number" id="number"  placeholder="10-digit NUBAN">
-      </div>
+    <button class="btn-button">
+      <img src="icons/magnifying-glass-plus-solid-full.svg" alt="icons">
+      <h1>SEO Service</h1>
+      <p>Search engine Optimazation services</p>
+      <a href="#">Learn More</a>
+    </button>
 
-        <span class="text"><strong class="entity">&#10003;</strong> set as default accout on invoice</span>
+    <button class="btn-button">
+      <img src="icons/palette-solid-full.svg" alt="icons">
+      <h1>Graphic Design</h1>
+      <p>Graphic design services</p>
+      <a href="#">Learn More</a>
+    </button>
 
-      <div class="button-container">
-        <button type="button" class="btn-cancel"> Cancel</button>
-        <button type="button"     class="btn-account">Add account</button>
-      </div>
-      
+    <button class="btn-button">
+      <img src="icons/globe-solid-full.svg" alt="icons">
+      <h1>Domain Registration</h1>
+      <p>Domain name Registration and renewal</p>
+      <a href="#">Learn More</a>
+    </button>
 
+    <button class="btn-button">
+      <img src="icons/cloud-regular-full.svg" alt="icons">
+      <h1>Web hosting</h1>
+      <p>Web hosting services</p>
+      <a href="#">Learn More</a>
+    </button>
 
-      
+    <button class="btn-button">
+      <img src="icons/user-gear-solid-full.svg" alt="icons">
+      <h1>Private Training </h1>
+      <p>One-on-one/private technology Training</p>
+      <a href="#">Learn More</a>
+    </button>
+
+    <button class="btn-button">
+      <img src="icons/code-solid-full.svg" alt="icons">
+      <h1>Web Design & Development</h1>
+      <p>professional website design and <br>Development</p>
+      <a href="#">Learn More</a>
+    </button>
+  </section>
+
+  <!--assignment 3-->
+  <div class="project">
+    <button class="input">"Call+234902195004"</button>
+    <button>Start a project</button>
+  </div>
+
+  <!--assignment4-->
+
+  <div class="card">
+    <div class="icon">
+      <i class="ri-palette-line"></i>
+    </div>
+    <h1>Canva Graphics</h1>
+    <p>create beautiful Graphic using canvas, <br> covering social media posts,
+      presentations, <br>and marketing materials. </p>
+
+    <strong>N35,000</strong>
+    <button class="Enroll">Enroll now</button>
+  </div>
+
+  <!--assignment5-->
+  <section class="auto">
+    <div>
+      <img src="icons/video-solid-full.svg" alt="icons">
+      <h1>Live Interactive Section </h1>
+      <p>engaging directly with instructors in real-time seasons <br>
+        design to enhamce your understanding and skills. </p>
+    </div>
+
+    <div>
+      <img src="icons/square-poll-vertical-solid-full.svg" alt="icons">
+      <h1>Project based learning </h1>
+      <p>apply your knowledge to real-time project that build <br>
+        your portfolioand demostrate your capabilities. </p>
     </div>
 
 
+    <div>
+      <img src="icons/user-gear-solid-full.svg" alt="icons">
+      <h1>Industry Expert instructors </h1>
+      <p>learn from professionals with extensice experiences in <br>
+        their fields who brings practical insight to every lesson. </p>
+    </div>
+
+    <div>
+      <img src="icons/house-circle-check-solid-full.svg" alt="icons">
+      <h1>Supportive community </h1>
+      <p>join the network of like minded learners and <br>
+        professionals who support each other goals and <br> Development. </p>
+    </div>
 
 
+    <div>
+      <img src="icons/medal-solid-full.svg" alt="icons">
+      <h1>Live Interactive Section </h1>
+      <p>>earn credentials that employers valve and that <br>
+        demostrate your proficiency in digital skills. </p>
 
+    </div>
 
-    <!--table-->
-    <table>
-      <tr>
-        <th>0/N</th>
-        <th>Name</th>
-        <th>Department</th>
-      </tr>
-
-      <tr>
-        <td>01</td>
-        <td>Rose</td>
-        <td>computer science</td>
-      </tr>
-
-      <tr>
-        <td>02</td>
-        <td>Peace</td>
-        <td>Physics</td>
-      </tr>
-
-      <tr>
-        <td>03</td>
-        <td>Josephine</td>
-        <td>Mass communication</td>
-      </tr>
-      <tr>
-        <td>04</td>
-        <td>Mark</td>
-        <td>Achitecture</td>
-      </tr>
-    </table>
-
+    <div>
+      <img src="icons/object-ungroup-solid-full.svg" alt="icons">
+      <h1>Flexible learning Options </h1>
+      <p>Choose between online and physical classes to fit your <br>
+        schedules and prefered learning environment. </p>
+    </div>
   </section>
+
+
+
+  <!--assignment7-->
+
+  <div class="form-container">
+    <form action="">
+      <h1>Welcome Back!</h1>
+      <fieldset>
+        <label>Email/Phone</label>
+        <input type="text" placeholder="info@ellitesappliances.com">
+      </fieldset>
+
+      <fieldset>
+        <label>Password</label>
+        <input type="password" name="number" placeholder="Enter Password">
+      </fieldset>
+
+      <button class="submit">SUBMIT</button>
+      <p>Register Now</p>
+    </form>
+    <div class="footer">
+      <p class="tech">Double Tech </p>
+      <span>Master digital skills for Tomorrow's innovation</span>
+    </div>
+  </div>
+
 </body>
+
 </html>
