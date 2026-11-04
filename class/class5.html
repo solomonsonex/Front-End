@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .def{
+                background: orange;
+                padding: 30px;
+                margin: 10px 0;
+                position: static;
+            }
+            .fx-class{
+                background: yellow;
+                position: fixed;
+                bottom:0;
+                right: 0;
+                z-index:2000;
+                animation: solomon 1s infinite;
+            }
+            .abs-class{
+                position: absolute;
+                background: #455555;
+            }
+            .stk-class{
+                position: sticky;
+                background: red;
+                top: 0;
+                z-index: 4000;
+            }
+              .ani1{
+                background: purple;
+                padding: 30px;
+                animation: solomon 3s infinite;
+            }
+            @keyframes solomon {
+                0%{background: red; border-radius:10px ; width: 20px;}
+                10%{background: blue;}
+                100%{background: black; width: 100%;}
+            }
+            .elt1{
+                padding: 40px;
+                background: black;
+            }
+            @media screen and (min-width:1280px) {
+                /* desktop */
+                .elt1{
+                    padding: 40px;
+                    background: blue;
+                } 
+            }
+           
+    </style>
+</head>
+<body>
+    <div class="elt1"></div>
+    <!-- animation  -->
+     <div class="ani1"></div>
+    <!-- relative  -->
+
+    <div class="def"> Lorem ipsum dolor sit. 2 </div>
+
+    <div class="def"> Lorem ipsum dolor sit. 1 </div>
+    <div class="def stk-class"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def fx-class"> Lorem ipsum dolor sit.</div>
+    <div class="def abs-class"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+    <div class="def"> Lorem ipsum dolor sit.</div>
+</body>
+</html>
+
+
+<!--  EXERCISE -->
+<!--  Create and design 3 buttons  -->

@@ -58,6 +58,7 @@
             border-top-color:blue ;
             margin: 30px;
             border-radius: 50%;
+            animation: spin 3s infinite linear;
         }
         .spinner2{
             border:6px solid transparent ;
@@ -87,6 +88,11 @@
             }
         }
 
+
+        @keyframes spin {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
         
 
     </style>
@@ -116,6 +122,7 @@
 
              
              <!-- Assignement to create a  loader  -->
+              <!-- apply the animaiton -->
 
              <!-- custome scroll bar  -->
               <!-- .overflow -->
