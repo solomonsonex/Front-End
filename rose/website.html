@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+  .loader {
+    display: flex;
+    gap: 10px;
+}
+
+.loader span {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+.hero-section{
+  background: linear-gradient(135deg, #10102F, #25205A, #302B63);
+  max-width: 1000px;
+  height: 500px;
+  margin-top: 20px;
+  border: 1px solid rgba (255, 255, 255, 0.1);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 120px;
+  margin-right: 50px;
+  
+  
+}
+
+.btn-button{
+  width: 280px;
+  height: 180px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+ margin-top: 30px;
+ margin-left: 20px;
+ border: 1px solid rgba(255, 255, 255, 0.26)  ;
+ color: rgba(255, 255, 255, 0.445);
+ text-align: left;
+ padding-left: 30px;
+ font-size: 13px;
+  
+}
+
+h1{
+  font-size: 15px;
+  color: white;
+  margin-top: 5px;
+  
+  
+}
+a{
+  text-decoration: none;
+  margin-top: 10px;
+
+}
+.btn-button i{
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 5px;
+  padding: 3px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+
+}
+
+.project{
+  width: 500px;
+  height: 100px;
+  background: navy;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.input{
+  width: 180px;
+  height: 45px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: white;
+  background: black;
+  padding-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+button{
+width: 160px;
+height: 45px;
+margin-top: 20px;
+margin-left: 20px;
+font-size: 20px;
+color: white;
+background: blue;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.card{
+ width: 90%;
+  max-width: 330px;
+  box-shadow: 10px 10px 20px 20px #00009933;
+  margin: 50px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  padding-left: 20px;
+}
+.card i{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  background: rgba(51, 51, 155, 0.808);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card,h1{
+  color: black;
+  font-size: 20px;
+
+}
+
+.card,p{
+  font-size: 18px;
+  color: black;
+}
+.card,strong{
+  color: rgba(37, 37, 116, 0.568);
+  padding-bottom: 20px;
+ 
+}
+.Enroll{
+  width: 100px;
+  height: 40px;
+  margin-left: 150px;
+  font-size: 15px;
+}
+
+.auto{
+  font-size: 10px;
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  margin-top: 150px;
+
+}
+
+.auto,h1{
+  font-size: 17px;
+ margin-left: 10px;
+ margin-left: 50px;
+}
+.auto,p{
+  font-size: 15px;
+}
+.auto i{
+  width: 30px;
+  height: 30px;
+  background: rgba(77, 77, 156, 0.877);
+  border-radius: 5px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+    .form-container {
+      width: 90%;
+      max-width: 430px;
+      box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.125);
+      margin: 20px auto;
+    }
+    .form-container form{
+      margin: auto;
+      padding: 20px;
+    }
+    fieldset{border: 0;}
+
+    .form-container
+    h1 {
+      padding-top: 5px;
+      font-size: 20px;
+      padding-left: 20px;
+
+    }
+
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .form-container
+    input, .form-container button {
+      padding: 20px 10px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid gray;
+      background: transparent;
+      margin:10px auto;
+      display: block;
+      margin-bottom: 15px;
+
+
+    }
+
+   .form-container .submit {
+      background: blue;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: blue;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    .tech {
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+
+    }
+ </style>
+
+<body>
+  <!--loader-->
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Assignment2 -->
+  <section class="hero-section">
+
+   <button class="btn-button">
+    <i class="fa-solid fa-magnifying-glass-plus"></i>
+    <h1>SEO Service</h1>
+    <p>Search engine Optimazation services</p>
+    <a href="#">Learn More</a>
+    </button>
+
+   <button class="btn-button">
+    <i class="fa-solid fa-palette"></i>
+    <h1>Graphic Design</h1>
+    <p>Graphic design services</p>
+    <a href="#">Learn More</a>
+    </button>
+
+   <button class="btn-button">
+    <i class="fa-regular fa-cloud"></i>
+    <h1>Domain Registration</h1>
+    <p>Domain name Registration and renewal</p>
+    <a href="#">Learn More</a>
+    </button>
+
+   <button class="btn-button">
+    <i class="fa-solid fa-globe"></i>
+    <h1>Web hosting</h1>
+    <p>Web hosting services</p>
+    <a href="#">Learn More</a>
+    </button>
+
+   <button class="btn-button">
+    <i class="fa-solid fa-user-group"></i>
+    <h1>Private Training </h1>
+    <p>One-on-one/private technology Training</p>
+    <a href="#">Learn More</a>
+    </button>
+
+   <button class="btn-button">
+    <i class="fa-solid fa-code"></i>
+    <h1>Web Design & Development</h1>
+    <p>professional website design and  <br>Development</p>
+    <a href="#">Learn More</a>
+    </button>
+   </section>
+
+   <!--assignment 3-->
+   <div class="project">
+    <button class="input">"Call+234902195004"</button>
+    <button>Start a project</button>
+    </div>
+
+    <!--assignment4-->
+    <div class="card">
+      <i class="fa-solid fa-palette"></i>
+      <h1>Canva Graphics</h1>
+      <p>create beautiful Graphic using canvas, <br> covering social media posts,
+        presentations, <br>and marketing materials.  </p>
+
+        <strong>N35,000</strong> 
+        <button class="Enroll">Enroll now</button>
+      </div>
+
+      <!--assignment5-->
+      <section class="auto">
+        <div>
+          <i class="fa-solid fa-video"></i>
+        <h1>Live Interactive Section </h1>
+        <p>engaging directly with instructors in real-time seasons <br>
+          design to enhamce your understanding and skills. </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-square-poll-vertical"></i>
+        <h1>Project based learning </h1>
+        <p>apply your knowledge to real-time project that build <br>
+          your portfolioand demostrate your capabilities. </p>
+          </div>
+
+
+          <div>
+            <i class="fa-solid fa-user-xmark"></i>
+            <h1>Industry Expert instructors </h1>
+         <p>learn from professionals with extensice experiences in <br>
+         their fields who brings practical insight to every lesson. </p>
+       </div>
+
+          <div>
+           <i class="fa-solid fa-house-medical-circle-check"></i>
+            <h1>Supportive community </h1>
+        <p>join the network of like minded learners and  <br>
+          professionals who support each other goals and <br> Development. </p>
+                  </div>
+
+
+          <div>
+            <i class="fa-solid fa-medal"></i>
+            <h1>Live Interactive Section </h1>
+        <p>>earn credentials that employers valve and that  <br>
+          demostrate your proficiency in digital skills. </p>
+       
+          </div>
+
+          <div>
+            <i class="fa-regular fa-window-restore"></i>
+            <h1>Flexible learning Options </h1>
+        <p>Choose between online and physical classes to fit your <br>
+          schedules and prefered learning environment. </p>
+          </div>
+        </section>
+
+        
+
+        <!--assignment7-->
+
+
+  <div class="form-container">
+    <form action="">
+      <h1>Welcome Back!</h1>
+      <fieldset>
+        <label>Email/Phone</label>
+        <input type="text" placeholder="info@ellitesappliances.com">
+      </fieldset>
+
+      <fieldset>
+        <label>Password</label>
+        <input type="password" name="number" placeholder="Enter Password">
+      </fieldset>
+
+      <button class="submit">SUBMIT</button>
+      <p>Register Now</p>
+    </form>
+    <div class="footer">
+      <p class="tech">Double Tech </p>
+      <span>Master digital skills for Tomorrow's innovation</span>
+    </div>
+  </div>
+
+</body>
+
+</html>
+   
+</body>
+</html>
