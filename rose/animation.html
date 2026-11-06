@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+body{
+  text-align: center;
+  font-family: Arial;
+}
+  .circle{
+    width: 40px;
+    height: 40px;
+    background: blue;
+    border-radius: 50%;
+    animation: Rose 3s infinite;
+  }
+
+  @keyframes Rose {
+    0%{ background: red; border-radius: 10px; width: 30px;}
+    50%{ background: green; border-radius: 30px; width: 20px;}
+    100%{ background: black; width: 20px;}
+  }
+
+  .color-box{
+    width: 100px;
+    height: 70px;
+    background: purple;
+    margin: 20px;
+    animation: colors 2s infinite alternate;
+  }
+
+  @keyframes colors{
+    0%{ background: orange;}
+    80%{ width: 50px; background: black;}
+  }
+
+  .slide {
+  width: 160px;
+  background: green;
+  color: white;
+  padding: 20px;
+  margin: 40px;
+  animation: slide 3s infinite alternate;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateY(50px);
+    }
+}
+
+ </style>
+</head>
+<body>
+  <!--my three animation-->
+
+  <h1>My Three animation</h1>
+  <div class="circle"></div>
+  <div class="color-box"></div>
+  <div class="slide">Hello World</div>
+</body>
+</html>
