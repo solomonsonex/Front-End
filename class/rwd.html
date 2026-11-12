@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        .container{
+            padding: 30px;
+            background-color: orange;
+            font-size: 15px;
+            width: 90%;
+            max-width: ;
+            margin: 30px auto;
+            @media screen and (min-width: 500px){
+                font-size: 30px;
+                background: red;
+                width: 400px;
+            }
+        }
+        
+        .holder .card{
+                padding: 20px;
+                background: yellowgreen;
+                min-width: 120px;
+
+        }
+        .holder{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+             @media screen and (min-width: 500px){
+                flex-direction: row;
+            }
+
+        }
+        button{
+            display: none;
+              @media screen and (min-width: 768px){
+                display: inline;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> Lorem, ipsum dolor.</div>
+
+    <div class="holder">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    <button> buton </button>
+</body>
+</html>
